@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
+import EditModal from './EditModal';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -39,34 +41,16 @@ const ProductList = () => {
       <div className='product-list'>
         {products.map(product => (
           <div key={product.id} style={{ marginBottom: '20px' }}>
-            {editProductId === product.id ? (
-              <div>
-                <input
-                  type="text"
-                  value={product.name}
-                  onChange={(e) => handleSaveEdit(product.id, { name: e.target.value })}
-                />
-                <input
-                  type="text"
-                  value={product.imageUrl}
-                  onChange={(e) => handleSaveEdit(product.id, { imageUrl: e.target.value })}
-                />
-                <input
-                  type="number"
-                  value={product.price}
-                  onChange={(e) => handleSaveEdit(product.id, { price: parseFloat(e.target.value) })}
-                />
-                <button onClick={() => handleSaveEdit(product.id, product)}>Save</button>
-              </div>
-            ) : (
+           
               <div className='product-container'>
                 <h2>{product.name}</h2>
                 <img src={product.imageUrl} alt={product.name} className='product-image' />
                 <p>Price: ${product.price.toFixed(2)}</p>
-                <button onClick={() => handleEdit(product.id)}>Edit</button>
-                <button onClick={() => handleDelete(product.id)}>Delete</button>
+                {/* <button onClick={() => handleEdit(product.id)} className='btn'>Edit</button> */}
+                <EditModal product = {product} handleSaveEdit = {handleSaveEdit}/>
+                <button onClick={() => handleDelete(product.id)} className='btn'>Delete</button>
               </div>
-            )}
+            
           </div>
         ))}
       </div>

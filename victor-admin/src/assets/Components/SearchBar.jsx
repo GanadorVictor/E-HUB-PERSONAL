@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './SearchBar.css'
+import './SearchBar.css';
+import ProductList from './Admin';
 
 const SearchBar = () => {
  const [products, setProducts] = useState([]);
@@ -41,10 +42,13 @@ const SearchBar = () => {
       
       <div className="product-list">
         {filteredProducts.map(product => (
-          <div key={product.id} className="product-item">
-            <h2>{product.name}</h2>
-           
-          </div>
+       <div className='product-container'>
+       <h2>{product.name}</h2>
+       <img src={product.imageUrl} alt={product.name} className='product-image' />
+       <p>Price: ${product.price.toFixed(2)}</p>
+       <button onClick={() => handleEdit(product.id)}>Edit</button>
+       <button onClick={() => handleDelete(product.id)}>Delete</button>
+     </div>
         ))}
       </div>
     </div>
