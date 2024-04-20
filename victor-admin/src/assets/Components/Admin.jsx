@@ -46,8 +46,8 @@ const ProductList = () => {
                 <h2>{product.name}</h2>
                 <img src={product.imageUrl} alt={product.name} className='product-image' />
                 <p>Price: ${product.price.toFixed(2)}</p>
-                {/* <button onClick={() => handleEdit(product.id)} className='btn'>Edit</button> */}
-                <EditModal product = {product} handleSaveEdit = {handleSaveEdit}/>
+                 {/* <button onClick={() => handleEdit(product.id)} className='btn'>Edit</button> */}
+                 <EditModal product = {product} handleSaveEdit = {handleSaveEdit}/>
                 <button onClick={() => handleDelete(product.id)} className='btn'>Delete</button>
               </div>
             
