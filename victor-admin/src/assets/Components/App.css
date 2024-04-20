@@ -115,7 +115,7 @@ body {
 }
 .product-image:hover,
 .product-image:hover{
-  transform: scale(1.09);
+  transform: scale(1.1);
 } 
 .product-name {
   color: #9595e0;
