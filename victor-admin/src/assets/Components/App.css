@@ -111,7 +111,12 @@ body {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: all 0.3s linear ;
 }
+.product-image:hover,
+.product-image:hover{
+  transform: scale(1.09);
+} 
 .product-name {
   color: #9595e0;
 }
