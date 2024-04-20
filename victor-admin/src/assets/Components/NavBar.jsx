@@ -20,7 +20,7 @@ function AdminNavbar() {
 
                 <NavLink className="nav-link orders" to="/orders">Orders</NavLink>
 
-                <button className="nav-link" onClick={handleLogout}>Logout</button>
+                <button className="nav-link btn"onClick={handleLogout}>Logout</button>
             </div>
         </div>
     );
