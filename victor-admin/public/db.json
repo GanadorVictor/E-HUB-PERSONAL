@@ -2,37 +2,37 @@
     "products": [
        {
          "id": 1,
-         "name": "",
+         "name": "Phone",
          "imageUrl": "https://i.pinimg.com/564x/83/39/82/8339823656ee1fb3d5487e9ecd86c971.jpg",
          "price":21
        },
        {
          "id": 2,
-         "name": "",
+         "name": "Laptops",
          "imageUrl": "https://i.pinimg.com/564x/b1/e1/fb/b1e1fb370368736adbbe8506d1177c3e.jpg",
          "price":39.99
        },
        {
          "id": 3,
-         "name": "",
+         "name": "Smartwatch",
          "imageUrl": "https://i.pinimg.com/564x/24/4c/a8/244ca8bef03b0bd4e70b2689d3e9309d.jpg",
          "price": 24.99
        },
        {
          "id": 4,
-         "name": "",
+         "name": "Headphones",
          "imageUrl": "https://i.pinimg.com/736x/95/04/d4/9504d440f2e1a8fca117ac1b436f1281.jpg",
          "price": 14.99
        },
        {
          "id": 5,
-         "name": "",
+         "name": "Mouse",
          "imageUrl": "https://i.pinimg.com/564x/b8/dd/f5/b8ddf5b3a374fed91a035ab36815bb0a.jpg",
          "price":24.99
        },
        {
          "id": 6,
-         "name": "",
+         "name": "Desktop",
          "imageUrl": "https://i.pinimg.com/564x/b1/3b/c6/b13bc685707a43c813ac0d02017ff106.jpg",
          "price": 39.99
        }

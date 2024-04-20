@@ -2,13 +2,17 @@
     /* background-color: #9595e0; */
     padding: 20px 10px;
     width: 100vw;
+    /* color: black; */
+
     color: #9595e0;
-  
+    
   }
   
   .footer-content {
+    width:100%;
     display: flex;
     justify-content: space-between;
+    
   }
   
   .footer-section {

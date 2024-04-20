@@ -9,7 +9,7 @@ const ProductList = ({ products, searchTerm, handleEdit, handleDelete }) => {
           <div key={product.id} style={{ marginBottom: '20px' }}>
             <div className='product-container'>
               <img src={product.imageUrl} alt={product.name} className='product-image' />
-              <p>{product.name}</p>
+              <p className='product-name'>{product.name}</p>
 
               <div className="buttons">
               <button onClick={() => handleEdit(product)} className='btn'>Edit</button>
