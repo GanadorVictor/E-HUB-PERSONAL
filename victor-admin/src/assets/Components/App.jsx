@@ -13,7 +13,7 @@ function App() {
     <Router>
       
       <AdminNavbar /> 
-      <SearchBar></SearchBar>
+      
       <Routes> 
         <Route path="/" element={<Admin />} />
       </Routes>
