@@ -13,13 +13,13 @@ function AdminNavbar() {
             <div className="nav-text">
                 <h1>E-Hub</h1>
             </div>
-            <div className="nav-links-left">
-                <NavLink className="nav-link" to='/home'>Home</NavLink>
-            </div>
+
             <div className="nav-links-right">
-               
+                
+                <NavLink className="nav-link" to='/home'>Home</NavLink>
+
                 <NavLink className="nav-link orders" to="/orders">Orders</NavLink>
-               
+
                 <button className="nav-link" onClick={handleLogout}>Logout</button>
             </div>
         </div>
