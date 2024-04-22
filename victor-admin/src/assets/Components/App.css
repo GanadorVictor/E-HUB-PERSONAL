@@ -37,7 +37,11 @@ body {
   font-weight: bold;
   font-size: 2rem;
   margin-left: 50px;
+<<<<<<< HEAD
   color: #ff922d;
+=======
+  color: #df6b0c;
+>>>>>>> origin/main
 }
 
 .nav-links-right{
@@ -50,7 +54,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   /* color: rgb(233, 221, 221); */
+<<<<<<< HEAD
   color: #ff922d ;
+=======
+  color: #df6b0c;
+>>>>>>> origin/main
  
   
 }
@@ -117,12 +125,12 @@ body {
   transform: scale(1.05);
 } 
 .product-name {
-  color: #9595e0;
+  color: #df6b0c;
 }
 .buttons {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+
   
 }
 .buttons button {
