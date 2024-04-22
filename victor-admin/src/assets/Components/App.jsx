@@ -6,6 +6,8 @@ import './index.css';
 import Admin from "./Admin"
 import Footer from './Footer';
 import SearchBar from './SearchBar';
+import EditModal from './EditModal';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <AdminNavbar /> 
       
       <Routes> 
-        <Route path="/" element={<Admin />} />
+        <Route path="/" element={<Admin />} /><Route path="/EditModal" element={<EditModal />} />
       </Routes>
      
       

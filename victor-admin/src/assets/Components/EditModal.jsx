@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './EditModal.css'
 const EditModal = ({ product, handleSaveEdit }) => {
  const [editedProduct, setEditedProduct] = useState(product);
 
@@ -14,18 +14,24 @@ const EditModal = ({ product, handleSaveEdit }) => {
  };
 
  return (
-    <div className='edit-modal'>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" value={editedProduct.name} onChange={handleChange} />
-        </label>
-        <label>
-          Price:
-          <input type="number" name="price" value={editedProduct.price} onChange={handleChange} />
-        </label>
-        <button type="submit">Save</button>
-      </form>
+    <div className='edit-modal-overlay'>
+      <div className='edit-modal'>
+        <form onSubmit={handleSubmit} className="edit-product-form">
+          <label>
+            Name:
+            <input type="text" name="name" value={editedProduct.name} onChange={handleChange} className="input-field" />
+          </label>
+          <label>
+            Price:
+            <input type="number" name="price" value={editedProduct.price} onChange={handleChange} className="input-field" />
+          </label>
+          <label>
+            Image URL:
+            <input type="text" name="imageUrl" value={editedProduct.imageUrl} onChange={handleChange} className="input-field" />
+          </label>
+          <button type="submit" className="btn">Save</button>
+        </form>
+      </div>
     </div>
  );
 };
